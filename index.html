@@ -7,6 +7,7 @@
     <title>Music Player</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/b5ea79a052.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -18,6 +19,7 @@
                 <li><a href="#">SPECIFICATIONS</a></li>
                 <li><a href="#">PRODUCTS</a></li>
                 <li><a href="#">CONNECT</a></li>
+                <li><i class="fas fa-bars"></i></li>
             </ul>
         </div>
         <div class="content">
@@ -35,23 +37,7 @@
         <source src="./media/synth-grass-preview-60s.mp3" type="audio/mp3">
     </audio>
 
-<script>
-    let mySong = document.getElementById("mySong");
-    let icon = document.getElementById("icon")
-    
-    icon.onclick = function() {
-        if(mySong.paused) {
-            mySong.play();
-            icon.src = "./media/pause.png"
-        }else {
-            mySong.pause();
-            icon.src = "./media/play.png"
-        }
-        
-        
-    }
-        
-</script>
+
     
 </body>
 </html>
